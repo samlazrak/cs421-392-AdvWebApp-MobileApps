@@ -1,0 +1,11 @@
+These questions were worded oddly, if there are issues with what I responded with please let me know in case in misinterpreted the question. Thank you.
+
+A. The root element is the <body>
+
+B. The <div id="navbar"> element has an unordered list containing somePage.html and someOtherPage.html
+
+C. No.
+
+D. The parent of the first paragraph tag is <div class="article">
+
+E. My Webite > Homepage > About

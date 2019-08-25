@@ -1,0 +1,44 @@
+<div>
+<div>
+<span>import</span><span> turtle</span>
+</div>
+<br>
+<div>
+<span>odd_number = </span><span>361</span>
+</div>
+<div>
+<span>double_number = </span><span>1.5</span>
+</div>
+<div>
+<span>sides = </span><span>25</span>
+</div>
+<div>
+<span>length = </span><span>40</span>
+</div>
+<br>
+<div>
+<span>def</span><span> drawShape(the_turtle, sides, length):</span>
+</div>
+<div>
+<span> </span><span>for</span><span> i </span><span>in</span><span> </span><span>range</span><span>(</span><span>0</span><span>, sides):</span>
+</div>
+<div><span> the_turtle.forward(length)</span></div>
+<div><span> the_turtle.left(odd_number/sides)</span></div>
+<div><span> </span></div>
+<div>
+<span>def</span><span> draw():</span>
+</div>
+<div><span> turtleScreen = turtle.Screen()</span></div>
+<div><span> the_turtle = turtle.Turtle()</span></div>
+<div>
+<span> the_turtle.speed(</span><span>0</span><span>)</span>
+</div>
+<br>
+<div>
+<span> </span><span>for</span><span> i </span><span>in</span><span> </span><span>range</span><span>(</span><span>0</span><span>, odd_number):</span>
+</div>
+<div><span> drawShape(the_turtle, sides, length)</span></div>
+<div><span> the_turtle.left(odd_number/double_number)</span></div>
+<br>
+<div><span>draw()</span></div>
+</div>

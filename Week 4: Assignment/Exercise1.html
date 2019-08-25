@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button ondblclick="repeater()">Double-click me</button>
+
+<p id="repeated"></p>
+
+<script>
+var i = 1;
+function repeater() {
+    i = i*2;
+    var str = "I've been repeated! ";
+    document.getElementById("repeated").innerHTML = str.repeat(i);
+}
+</script>
+
+</body>
+</html>

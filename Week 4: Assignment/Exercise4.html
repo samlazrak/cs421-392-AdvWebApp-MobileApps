@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="xhrfunction()">Make the request</button>
+<p id="response"></p>
+
+<script>
+  function xhrfunction(){
+    var xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            data = (xhr.responseText);
+            myFunction(data);
+        }
+    }
+    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
+    xhr.send(null);
+  }
+  
+  function myFunction(data){
+  	document.getElementById("response").innerHTML = data;
+  	document.body.appendChild(data);
+  }
+  
+</script>
+
+</body>
+</html>

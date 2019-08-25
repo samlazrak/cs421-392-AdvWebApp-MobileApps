@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="result"></div>
+<div id="result2"></div>
+
+<script>
+// Check browser support
+if (typeof(Storage) !== "undefined") {
+    // Store
+    localStorage.setItem("hasAccount", "1");
+    var myObj = { "settings": {"theme": "dark"} };
+    var myJSON = JSON.stringify(myObj);
+    localStorage.setItem("json", myJSON)
+    let JSONdata = localStorage.getItem("json")
+    document.getElementById("result").innerHTML = localStorage.getItem("hasAccount");
+    document.getElementById("result2").innerHTML = JSONdata
+} else {
+    document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+}
+</script>
+
+</body>
+</html>
